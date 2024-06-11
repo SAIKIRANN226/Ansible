@@ -1,4 +1,4 @@
-# playbook is a list of Plays
+# playbook "-"is a list of Plays
 - name: PLAY-1
   hosts: localhost
   tasks:
