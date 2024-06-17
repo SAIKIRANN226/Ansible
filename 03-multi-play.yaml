@@ -1,9 +1,9 @@
 # playbook "-"is a list of Plays
 - name: PLAY-1
-  hosts: localhost
+  hosts: localhost  # not only external it can also connect to the local hosts also
   tasks:
   - name: PLAY-1 and TASK-1
-    ansible.builtin.debug:
+    ansible.builtin.debug:   # it will print what ever you give thats y this module
       msg: "Hello from PLAY-1 and TASK-1"
 
 - name: PLAY-2

@@ -11,3 +11,7 @@
       Course: "DevOps with AWS"
     ansible.builtin.debug:
       msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
+
+
+
+# Task level variables can overwrite play level variables, like it as inheritence

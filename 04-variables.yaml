@@ -9,3 +9,7 @@
   - name: check variables
     ansible.builtin.debug:
       msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
+
+
+
+# playlevel means defining variables and using anywhere in the tasks level
