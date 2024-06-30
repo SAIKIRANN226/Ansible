@@ -8,6 +8,6 @@
       state: "{{item.state}}" # item is a default keyword
     loop:
     - {name: 'git', state: 'present'} # item
-    - {name: 'mysql', state: 'absent'}
+    - {name: 'mysql', state: 'absent'} # here absent means removing the mysql
     - {name: 'postfix', state: 'absent'}
     - {name: 'nginx', state: 'present'}

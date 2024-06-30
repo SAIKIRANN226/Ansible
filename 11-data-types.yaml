@@ -7,7 +7,7 @@
     - Shell
     - ANsible
     - Linux
-    Experience: # Experience is map type. It contains key value pairs
+    Experience: # Experience is map type. It contains key value pairs for map it doesnt have -
       DevOps: 7
       AWS: 6
       Docker: 4
