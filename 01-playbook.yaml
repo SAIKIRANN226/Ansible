@@ -1,5 +1,5 @@
 - name: ping playbook
-  hosts: web
+  hosts: web             # giving the information like conencting to which server or hosts
   tasks:
   - name: ping the server
-    ansible.builtin.ping:
+    ansible.builtin.ping:   # this is nothing but ping module

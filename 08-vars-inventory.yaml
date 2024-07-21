@@ -4,3 +4,8 @@
   - name: check variables
     ansible.builtin.debug:
       msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
+
+
+
+
+# here iam not giving variables from play level,task level , nor prompt level, you can mention directly in the inventory.ini
