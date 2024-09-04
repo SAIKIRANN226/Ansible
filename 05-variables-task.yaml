@@ -13,5 +13,5 @@
       msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
 
 
-
+# So now tell me which one will pick? variables from play level(or)from task level?,task level variables can over write play level that is the concept of inheritence
 # Task level variables can overwrite play level variables, like it as inheritence
