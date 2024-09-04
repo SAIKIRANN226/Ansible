@@ -3,8 +3,8 @@
   become: yes  # for creating user you need to become root user
   tasks:
   - name: check roboshop user exists or not
-    ansible.builtin.command: id roboshop
-    register: user # user is a variable name
+    ansible.builtin.command: id roboshop    # like example if id roboshop,if not exists we create it,if exists we skipped.if no Module(command) is available in default, we can use command module and run this command and take output in a variable,it is like a normal shell command example "id roboshop" and grap this output in register
+    register: user # user is a variable name where your ouput stroes in user variable
     ignore_errors: true # ansilbe will not exit even it got error
   
   - name: print variable value
@@ -13,7 +13,7 @@
   
   - name: print exit status or return code
     ansible.builtin.debug:
-      msg: "status is: {{user.rc}}"
+      msg: "status is: {{user.rc}}"  # Here rc is nothing bu exit status
 
   - name: create user
     ansible.builtin.user:
