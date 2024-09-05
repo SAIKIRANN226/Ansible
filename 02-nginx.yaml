@@ -3,7 +3,7 @@
   become: yes # it will get root access
   tasks:
   - name: install nginx package
-    ansible.builtin.package:        # this is module
+    ansible.builtin.package:        # this is module, we can use dnf also in place of package
       name: nginx
       state: present         # present is nothing but installing
   - name: run nginx
