@@ -15,3 +15,8 @@
       msg: "Hello AWS"
     tags:
     - aws
+
+
+    # In the server --> if you want only to run a particular tags then we can use the command like
+    # ansible-playbook -t devops 16-tags.yaml
+    # ansible-playbook -t aws 16-tags.yaml
