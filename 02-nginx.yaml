@@ -1,12 +1,12 @@
 - name: install and run nginx
   hosts: web
-  become: yes # it will get root access
+  become: yes   # It will get root access
   tasks:
   - name: install nginx package
-    ansible.builtin.package:        # this is module, we can use dnf also in place of package
+    ansible.builtin.package:        # This is module, we can use dnf also in place of package, we can use any module because ansible is rich in modules
       name: nginx
-      state: present         # present is nothing but installing
+      state: present         # Present = installing
   - name: run nginx
     ansible.builtin.service:
       name: nginx
-      state: started
+      state: started        # Started = Running the instance
