@@ -1,7 +1,7 @@
 # Playbook "-" is a list of Plays
 
 - name: PLAY-1
-  hosts: localhost  # Not only external hosts it can also connect to the local hosts also
+  hosts: localhost  # Not only external hosts it can also connect to the local hosts also, ansible can manage its own server also
   tasks:
   - name: PLAY-1 and TASK-1
     ansible.builtin.debug:   # It will print what ever you give thats why this module
@@ -13,3 +13,6 @@
   - name: PLAY-2 and TASK-2
     ansible.builtin.debug:
       msg: "Hello from PLAY-2 and TASK-2"
+
+# If "-" it is play
+# If not "-" it is a map

@@ -8,5 +8,5 @@
 
 
 
-# here iam not giving variables from play level,task level , nor prompt level, you can mention directly in the inventory.ini
-# you can give in the inventory.ini in [localhost:vars] under this you can give variables,no need to give ansible will automatically check in the inventory.ini
+# Here iam not giving variables from play level,task level,nor prompt level,you can mention directly in the inventory.ini
+# You can give in the inventory.ini in [localhost:vars] under this you can give variables,so ansible will automatically refer in the inventory.ini

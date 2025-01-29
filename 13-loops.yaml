@@ -3,7 +3,7 @@
   tasks:
   - name: print persons
     ansible.builtin.debug:
-      msg: "Hello {{item}}" # item is a default keyword,so that ansible will keep first ramhesh,suresh,robert,raheem
+      msg: "Hello {{item}}" # Item is a default keyword,so that ansible will keep first ramesh,suresh,robert,raheem
     loop:
     - Ramesh
     - Suresh

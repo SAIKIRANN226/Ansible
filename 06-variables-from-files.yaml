@@ -1,3 +1,5 @@
+# Create variables.yaml file and give your required variables over there and call it
+
 - name: variables from PLAY level
   hosts: localhost
   vars_files:

@@ -7,5 +7,5 @@
 
 
 
-# how to give args from the command line ?
+# How to give args from the command line ?
 # ansible-playbook -i inventory.ini -e ansible _user=centos -e ansible_password=DevOps321 -e "PERSON=Saikiran" -e "WISHES=Morning" <file-name>

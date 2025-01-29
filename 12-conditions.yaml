@@ -1,11 +1,11 @@
 - name: conditions
   hosts: localhost
-  become: yes  # for creating user you need to become root user
+  become: yes
   tasks:
   - name: check roboshop user exists or not
-    ansible.builtin.command: id roboshop    # like example if id roboshop,if not exists we create it,if exists we skipped.if no Module(command) is not available in default, we can use command module and run this command and take output in a variable,it is like a normal shell command example "id roboshop" and grap this output in register
-    register: user # user is a variable name where your ouput stroes in user variable
-    ignore_errors: true # ansible will not exit even it got error
+    ansible.builtin.command: id roboshop 
+    register: user 
+    ignore_errors: true
   
   - name: print variable value
     ansible.builtin.debug:
@@ -13,9 +13,25 @@
   
   - name: print exit status or return code
     ansible.builtin.debug:
-      msg: "status is: {{user.rc}}"  # Here rc is nothing bu exit status
+      msg: "status is: {{user.rc}}"
 
   - name: create user
     ansible.builtin.user:
       name: roboshop
-    when: user.rc != 0 # condition
+    when: user.rc != 0
+
+
+
+
+
+    # Line 3: For creating user you need to become root user
+
+    # Line 6: Example take "id roboshop" ,if not exists we create it,if exists we skipped. if no Module(command) is not available in ansible default document, we can use command module and run this command and take output in a variable,it is like a normal shell command example "id roboshop" and grap this output in register,thats why we use "ansible.builtin.command" module
+
+    # Line 7: User is a variable name where your output stores in user variable
+
+    # Line 8: Ansible will not exit even it got error
+
+    # Line 16: Here rc is nothing but exit status 
+
+    # Line 21: Condition
