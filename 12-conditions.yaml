@@ -30,7 +30,7 @@
 
     # Line 7: User is a variable name where your output stores in user variable
 
-    # Line 8: Ansible will not exit even it got error
+    # Line 8: Ansible will not exit even it got error, soo thats why we use ignore errors
 
     # Line 16: Here rc is nothing but exit status 
 
