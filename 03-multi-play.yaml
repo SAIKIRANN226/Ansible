@@ -1,4 +1,7 @@
 # Playbook "-" is a list of Plays
+# Yaml always start with "-"
+# If "-" it is play
+# If not "-" it is a map
 
 - name: PLAY-1
   hosts: localhost  # Not only external hosts it can also connect to the local hosts also, ansible can manage its own server also
@@ -14,5 +17,3 @@
     ansible.builtin.debug:
       msg: "Hello from PLAY-2 and TASK-2"
 
-# If "-" it is play
-# If not "-" it is a map

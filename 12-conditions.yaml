@@ -18,11 +18,7 @@
   - name: create user
     ansible.builtin.user:
       name: roboshop
-    when: user.rc != 0
-
-
-
-
+    when: user.rc!= 0
 
     # Line 3: For creating user you need to become root user
 
@@ -30,7 +26,7 @@
 
     # Line 7: User is a variable name where your output stores in user variable
 
-    # Line 8: Ansible will not exit even it got error, soo thats why we use ignore errors
+    # Line 8: Ansible will not exit even it got error, so thats why we use ignore errors
 
     # Line 16: Here rc is nothing but exit status 
 

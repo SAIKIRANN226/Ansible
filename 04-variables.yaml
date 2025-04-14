@@ -11,5 +11,6 @@
       msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
 
 
-
+# Variables concept:: Dry concept,that means dont repeat yourself,variables we keep a aside from the code so that code will not get disturb when we are doing changes,variables holds a value you can use it anywhere.So to call a variable in ansible we use two flower brases {{ }},we can use this variables in play level and can be used anywhere in the task level
 # Playlevel means defining variables and using anywhere in the tasks level
+# We can a variable in double flower braces {{ }}
