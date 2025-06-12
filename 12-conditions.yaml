@@ -22,7 +22,7 @@
 
     # Line 3: For creating user you need to become root user
 
-    # Line 6: Example take "id roboshop" ,if not exists we create it,if exists we skipped. if no Module(command) is not available in ansible default document, we can use command module and run this command and take output in a variable,it is like a normal shell command example "id roboshop" and grap this output in register,thats why we use "ansible.builtin.command" module
+    # Line 6: Example take "id roboshop", if not exists we create it, if exists we skipped. If no Module(command) is not available in ansible default document, we can use command module and run this command and take output in a variable, it is like a normal shell command example "id roboshop" and grap this output in register, thats why we use "ansible.builtin.command" module
 
     # Line 7: User is a variable name where your output stores in user variable
 

@@ -22,10 +22,10 @@
     # ansible-playbook -t aws 16-tags.yaml
 
     # When we can use tags?
-    # For example take a catalogue component if there is any new version of catalogue what will do basically?we do new deployment/new release 
-    # 1.stop the server
-    # 2.remove old code
-    # 3.download the latest code
-    # 4.restart the server
+    # For example take a catalogue component, if there is any new version of catalogue what will do basically ? we do new deployment/new release 
+    # 1.Stop the server
+    # 2.Remove old code
+    # 3.Download the latest code
+    # 4.Restart the server
     # So in the common role i give deployment.yaml mention all the above 4 tasks including tags in it and then use the tags in the server for deployment
-    # command will be ansible-playbook -e component=catalogue -t deployment main.yaml
+    # Command will be ansible-playbook -e component=catalogue -t deployment main.yaml

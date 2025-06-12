@@ -20,7 +20,7 @@
     ansible.builtin.debug:
       msg: "Hello {{PERSON}}, Good {{WISHES}}"
 
-# 1. CMD (do not give spaces while prompting person and wishes)
+# 1. CMD (Do not give spaces while prompting person and wishes)
 # 2. Task
 # 3. File
 # 4. Prompt
