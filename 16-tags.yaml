@@ -22,7 +22,7 @@
     # ansible-playbook -t aws 16-tags.yaml
 
     # When we can use tags?
-    # For example take a catalogue component, if there is any new version of catalogue what will do basically ? we do new deployment/new release 
+    # For example take a catalogue component, if there is any new version of catalogue, what will you do basically ? we do new deployment/new release right ?
     # 1.Stop the server
     # 2.Remove old code
     # 3.Download the latest code
